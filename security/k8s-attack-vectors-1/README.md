@@ -2,7 +2,7 @@
 
 Typically a real scenario attack is based on an exploit composition of multiple threat vectors. It can start from a Layer 7 threat vector inflicted by a well-known log4shell vulnerability. But this is not enough to take control over the underneath Kubernetes cluster. There are other contributors. There may not be good enough isolation which allows lateral movement. Then a threat actor can jump to a less strict environment where an RBAC policy grants permissions to create pods for devops.
 
-In the attached presentation we provided together Fulya Sengil you can find such an attack scenario with commands exploiting threat vectors.
+In the attached presentation we provided together with Fulya Sengil you can find such an attack scenario with commands exploiting threat vectors.
 
 A few comments:
 1. The scenario starts from the rootless non-privileged ready-only deployment and ends up with its own standalone container. Choose a solution which can monitor and protect not only K8s but also the host and standalone containers beyond any orchestrator.
